@@ -1,0 +1,79 @@
+@charset "utf8";
+@font-face {
+    font-family: 'titulo';
+    src: url('../fonts/VarsityTeam-Bold.otf')
+    format('opentype');
+}
+:root{
+    --cor0: #ffffff;
+    --cor1: #000000;
+    --cor2: #BCCB3E;
+    --cor3: #7B9DC3;
+    --cor4: #EDBA3A;
+
+    --font0: monospace, sans-serif;
+    --font1: 'titulo', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font0);
+}
+
+header{
+    display: flex;
+    text-align: center;
+    background-color:var(--cor0);
+    color: var(--cor1);
+    text-align: center;
+
+}
+
+
+header > #hamburguer{
+    color: var(--cor3);
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    cursor: pointer;
+}
+nav#itens{
+    display: none;
+}
+
+nav#itens > ul{
+    list-style-type: none;
+}
+
+nav#itens > ul > li > a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor0);
+    background-color: var(--cor3);
+    border-top: 2px solid #a7cdf8;
+}
+
+nav#itens > ul > li > a:hover{
+    color: var(--cor4);
+    transition: .5s;
+}
+
+div#fundo{
+    background: url('../imagens/fundo.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center left;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 2em;
+    color: var(--cor0);
+}
