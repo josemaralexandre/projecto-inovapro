@@ -113,6 +113,14 @@ footer  #redes-sociais > a {
 
 }
 
+footer  #redes-sociais > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor3);    
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: translate .5s;
+}
+
 footer #linha-rodape{
     border-top: 1px solid #a7cdf8;
     text-align: center;
