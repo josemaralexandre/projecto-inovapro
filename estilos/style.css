@@ -22,6 +22,10 @@
     font-family: var(--font0);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     text-align: center;
@@ -63,10 +67,10 @@ nav#itens > ul > li > a:hover{
     transition: .5s;
 }
 
-div#fundo{
-    background: url('../imagens/fundo.png') no-repeat;
+div.fundo{
+    background: url('../imagens/fundo1.png') no-repeat;
     background-attachment: fixed;
-    background-position: center left;
+    background-position: center center;
     background-size: cover;
     height: 100vh;
 
@@ -79,6 +83,10 @@ div#fundo{
     color: var(--cor0);
 }
 
+section{
+    height: 100vh;
+    padding: 120px 60px 40px;
+}
 
 footer{
     background-color: #24272b;
