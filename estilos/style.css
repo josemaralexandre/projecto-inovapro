@@ -25,7 +25,7 @@
 header{
     display: flex;
     text-align: center;
-    background-color:var(--cor0);
+    background-color:var(--cor);
     color: var(--cor1);
     text-align: center;
 
