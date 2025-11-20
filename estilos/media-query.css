@@ -1,0 +1,29 @@
+@charset "utf8";
+
+@media screen and  (min-width:800px) and (max-width:1200px){
+    header > #hamburguer{
+        display: none;
+    }
+
+    nav#itens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7B9DC3;
+    }
+
+    nav#itens > ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+        nav#itens > ul > li > a{
+            border: none;
+            font-weight: bolder;
+            color:
+        }
+
+}        
