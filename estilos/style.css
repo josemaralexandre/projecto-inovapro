@@ -42,7 +42,7 @@ header img {
 }
 
 header > #hamburguer{
-    color: var(--cor3);
+    color: var(--cor0);
     display: block;
     position: absolute;
     left: 90%;
@@ -50,14 +50,15 @@ header > #hamburguer{
     top: 15px;
     cursor: pointer;
     font-size: 32px;
-    color: white;
+
 }
 
 nav#itens{
     display: none;
+    background-color: rgba(83, 88, 104, 0.288);
     width: 100%;
-    position: absolute;
-    top: 70px;  
+    position: fixed;   
+    top: 70px;        
     left: 0;
     z-index: 50;
 }
@@ -73,7 +74,7 @@ nav#itens > ul > li > a{
     color: var(--cor0);
     background-color: rgba(83, 88, 104, 0.288);;
     padding: 15px;
-    border-bottom: 1px solid #a7cdf8;
+    border-top: 1px solid #a7cdf8;
 }
 
 nav#itens > ul > li > a:hover{
