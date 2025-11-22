@@ -14,7 +14,7 @@
 <body>
     <header>
 
-        <img src="imagens/logo-inovapro.jpeg" alt="Logotipo da empresa">
+        <img src="imagens/logo-inovapro.jpeg" alt="Logotipo da empresa" id="logo">
         
         <div id="hamburguer" onclick="clickMenu()">
             <span class="material-symbols-outlined">menu</span>
@@ -85,13 +85,19 @@
     </footer>
 
     <script>
-        function clickMenu(){
-            if(itens.style.display=='none'){
-                itens.style.display='block'
-            }else{
-                itens.style.display='none'
+        function clickMenu() {
+            let menu = document.getElementById("itens");
+            let icon = document.querySelector("#hamburguer span");
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                icon.textContent = "menu"; 
+            } else {
+                menu.style.display = "block";
+                icon.textContent = "close"; 
             }
         }
     </script>
+
 </body>
 </html>

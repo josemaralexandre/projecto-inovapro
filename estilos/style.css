@@ -26,26 +26,40 @@ html{
     scroll-behavior: smooth;
 }
 
-header{
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(83, 88, 104, 0.288);
     display: flex;
-    text-align: center;
-    background-color:var(--cor);
-    color: var(--cor1);
-    text-align: center;
+    align-items: center;
+    justify-content: left; 
+}
 
+header img {
+    height: 50px; 
 }
 
 header > #hamburguer{
     color: var(--cor3);
     display: block;
     position: absolute;
-    top: 20px;
     left: 90%;
+    right: 20px;
+    top: 15px;
     cursor: pointer;
+    font-size: 32px;
+    color: white;
 }
 
 nav#itens{
     display: none;
+    width: 100%;
+    position: absolute;
+    top: 70px;  
+    left: 0;
+    z-index: 50;
 }
 
 nav#itens > ul{
@@ -55,11 +69,11 @@ nav#itens > ul{
 nav#itens > ul > li > a{
     display: block;
     text-align: center;
-    padding: 10px;
     text-decoration: none;
     color: var(--cor0);
-    background-color: var(--cor3);
-    border-top: 2px solid #a7cdf8;
+    background-color: rgba(83, 88, 104, 0.288);;
+    padding: 15px;
+    border-bottom: 1px solid #a7cdf8;
 }
 
 nav#itens > ul > li > a:hover{
