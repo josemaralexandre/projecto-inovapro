@@ -1,29 +1,96 @@
 @charset "utf8";
 
 @media screen and  (min-width:800px) and (max-width:1200px){
+    header {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 70px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: left; 
+    }
+
+    header img {
+        display: none;
+    }
+
     header > #hamburguer{
         display: none;
+    }
+
+    nav img{
+        display: flex;
+        height: 70px;
+        width: 100px;
+        margin-right: 50px;
+        margin-left: 20px; 
     }
 
     nav#itens{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #7B9DC3;
-    }
+        top: 0;  
+        width: 100vw;
+        height: 70px;  
+}
 
     nav#itens > ul{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        
     }
 
-        nav#itens > ul > li > a{
-            border: none;
-            font-weight: bolder;
-            color:
-        }
+    nav#itens > ul > li > a{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        color: var(--cor0);
+        background-color: transparent;
+        border: none;
+        padding: 15px;
+    }
+
+    nav#itens > ul > li > a:hover{
+        color: var(--cor4);
+        transition: .5s;
+    }
+    
+    div.fundo{
+        background: url('../imagens/fundo.png');
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: var(--font1);
+        font-size: 2em;
+        color: var(--cor0);
+    }
+
+    .container-cursos2{
+        display: flex;
+    }
+
+    .container-cursos2 .cursos{
+        margin-right: 20px;
+    }
 
 }        
+
+@media screen and (min-width:1200px) {
+    .container-cursos1{
+        display: flex;
+    }
+
+    .container-cursos2{
+        display: flex;
+    }
+}

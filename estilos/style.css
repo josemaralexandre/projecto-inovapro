@@ -38,7 +38,9 @@ header {
 }
 
 header img {
-    height: 50px; 
+    height: 100%; 
+    width: 100px;
+    margin-left: 30px;
 }
 
 header > #hamburguer{
@@ -50,7 +52,10 @@ header > #hamburguer{
     top: 15px;
     cursor: pointer;
     font-size: 32px;
+}
 
+nav img {
+    display: none;
 }
 
 nav#itens{
@@ -96,11 +101,14 @@ div.fundo{
     font-family: var(--font1);
     font-size: 2em;
     color: var(--cor0);
+
+    transition-timing-function: ease;
 }
 
 section{
     height: 100%;
     padding: 40px 40px;
+    transition-timing-function: ease;
 }
 
 section >p{
@@ -171,6 +179,8 @@ footer{
     color: var(--cor3);
     padding: 30px;
     height: 300px;
+
+    transition-timing-function: ease;
 }
 
 footer h3{
