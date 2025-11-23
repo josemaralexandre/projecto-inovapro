@@ -48,17 +48,10 @@
         display: flex;
         text-align: center;
         text-decoration: none;
-        color: var(--cor0);
-        background-color: transparent;
         border: none;
         padding: 15px;
     }
 
-    nav#itens > ul > li > a:hover{
-        color: var(--cor4);
-        transition: .5s;
-    }
-    
     div.fundo{
         background: url('../imagens/fundo.png');
         background-attachment: fixed;
@@ -83,14 +76,120 @@
         margin-right: 20px;
     }
 
+    .botao-inscrever {
+        margin-top: 10px;
+
+    }
+    footer{
+        height: 150px;
+    }
+
+    footer > .container-rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 250px;
+    }
 }        
 
 @media screen and (min-width:1200px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 70px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: left; 
+    }
+
+    header img {
+        display: none;
+    }
+
+    header > #hamburguer{
+        display: none;
+    }
+
+    nav img{
+        display: flex;
+        height: 70px;
+        width: 100px;
+        margin-right: 50px;
+        margin-left: 20px; 
+    }
+
+    nav#itens{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;  
+        width: 100vw;
+        height: 70px;  
+}
+
+    nav#itens > ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav#itens > ul > li > a{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        padding: 15px;
+    }
+
+    div.fundo{
+        background: url('../imagens/imagem4.jpg');
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: var(--font1);
+        font-size: 2em;
+        color: var(--cor0);
+    }
+
+    main{
+        max-width: 1000px;
+        margin: auto;
+    }
+
     .container-cursos1{
         display: flex;
     }
 
     .container-cursos2{
         display: flex;
+    }
+
+    .container-cursos2 .cursos{
+        margin-right: 20px;
+    }
+
+    .botao-inscrever {
+        margin-top: 10px;
+
+    }
+
+    footer{
+        height: 150px;
+    }
+
+    footer > .container-rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 250px;
     }
 }
