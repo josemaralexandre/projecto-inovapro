@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaPro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    
+</head>
+<body>
+    <header>
+
+        <img src="imagens/logo-inovapro.jpeg" alt="Logotipo da empresa" id="logo">
+        
+        <div id="hamburguer" onclick="clickMenu()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    
+    </header>
+
+    <nav id="itens">
+        
+        <img src="imagens/logo-inovapro.jpeg" alt="Logotipo da empresa" id="logo">
+        
+        <ul>
+            <li><a href="#paginaprincipal">Página Principal</a></li>
+            <li><a href="#nossoscursos">Nossos Cursos</a></li>
+            <li><a href="#novidades">Novidades</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#sobrenos">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+
+
+    </main>
+
+
+    <footer>  
+        <div class="container-rodape">
+            
+            <div>
+                <h3>Siga-nos</h3>
+                <div id="redes-sociais">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-whatsapp"></a>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Contactos</h3>
+                <div><i class="fas fa-map-marker-alt"></i> Talatona, Luanda</div>
+                <div><i class="fas fa-phone"></i> +244 952 077 240</div>
+                <div><i class="fas fa-envelope"></i> inovapro@gmail.com</div>
+            </div>
+        </div>
+            
+        <div id="linha-rodape">
+            <p>©Todos os direitos reservados a CodeWave</p> 
+        </div>
+
+    </footer>
+
+    <script>
+        function clickMenu() {
+            let menu = document.getElementById("itens");
+            let icon = document.querySelector("#hamburguer span");
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                icon.textContent = "menu"; 
+            } else {
+                menu.style.display = "block";
+                icon.textContent = "close"; 
+            }
+        }
+    </script>
+
+</body>
+</html>
