@@ -79,11 +79,11 @@
         margin: auto;
     }
 
-    .container-cursos2{
+    .container-cursos{
         display: flex;
     }
 
-    .container-cursos2 .cursos{
+    .container-cursos .cursos{
         margin-right: 20px;
     }
 
@@ -181,15 +181,11 @@
         margin: auto;
     }
 
-    .container-cursos1{
+    .container-cursos{
         display: flex;
     }
 
-    .container-cursos2{
-        display: flex;
-    }
-
-    .container-cursos2 .cursos{
+    .container-cursos .cursos{
         margin-right: 20px;
     }
 
