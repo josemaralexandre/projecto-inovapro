@@ -96,7 +96,7 @@ nav#itens > ul > li > a:hover{
 }
 
 div.fundo{
-    background: url('../imagens/fundo.png') no-repeat;
+    background: url('../imagens/fundo1.png') no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
