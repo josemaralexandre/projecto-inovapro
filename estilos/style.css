@@ -24,11 +24,13 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #FBF7F4;
 }
 
 body{
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    background-color: #FBF7F4;
 }
 
 header {
@@ -130,7 +132,8 @@ section >p{
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
+  background-color: var(--cor0);  
 }
 
 .cursos:hover {
