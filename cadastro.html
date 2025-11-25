@@ -7,14 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     
 </head>
 <body>
     <header>
 
-        <img src="imagens/logo-inovapro.jpeg" alt="Logotipo da empresa" id="logo">
+        <img src="imagens/logo-inovapro.png" alt="Logotipo da empresa" id="logo">
         
         <div id="hamburguer" onclick="clickMenu()">
             <span class="material-symbols-outlined">menu</span>
@@ -24,10 +24,10 @@
 
     <nav id="itens">
         
-        <img src="imagens/logo-inovapro.jpeg" alt="Logotipo da empresa" id="logo">
+        <img src="imagens/logo-inovapro.png" alt="Logotipo da empresa" id="logo">
         
         <ul>
-            <li><a href="#paginaprincipal">Página Principal</a></li>
+            <li><a href="index.html">Página Principal</a></li>
             <li><a href="#nossoscursos">Nossos Cursos</a></li>
             <li><a href="#novidades">Novidades</a></li>
             <li><a href="#promocoes">Promoções</a></li>
@@ -35,12 +35,33 @@
         </ul>
     </nav>
 
-    <main>
+<main>
+        <section class="formulario-inscricao">
+            <h2>Inscreva-se no Curso</h2>
+            <form action="enviar-inscricao.php" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
 
+                <label for="email">Nº do Documento de Identificação:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+
+                <label for="curso">Forma de Pagamento:</label>
+                <select id="curso" name="curso" required>
+                    <option value="web">Express</option>
+                    <option value="marketing">PayPal</option>
+                    <option value="design">Master Card</option>
+                </select>
+
+                <button type="submit">Prosseguir</button>
+            </form>
+        </section>
     </main>
-
 
     <footer>  
         <div class="container-rodape">
