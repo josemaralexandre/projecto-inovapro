@@ -12,8 +12,8 @@
     --cor3: #7B9DC3;
     --cor4: #EDBA3A;
 
-    --font0: monospace, sans-serif;
-    --font1: 'titulo', sans-serif;
+    --font0: lato, sans-serif;
+    --font1: lato, sans-serif;
 }
 
 *{
@@ -24,11 +24,13 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #FBF7F4;
 }
 
 body{
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    background-color: #FBF7F4;
 }
 
 header {

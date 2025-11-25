@@ -157,7 +157,7 @@
     }
 
     div.fundo{
-        background: url('../imagens/imagem4.jpg');
+        background: url('../imagens/fundo.png');
         background-attachment: fixed;
         background-position: center center;
         background-size: cover;
