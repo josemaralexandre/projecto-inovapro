@@ -110,6 +110,7 @@ main {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .formulario-inscricao h2 {
@@ -121,11 +122,13 @@ main {
     font-weight: bold;
     margin-bottom: 8px;
     display: block;
+    text-align: left;
+    margin-left: 60px;
 }
 
 .formulario-inscricao input,
 .formulario-inscricao select {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
